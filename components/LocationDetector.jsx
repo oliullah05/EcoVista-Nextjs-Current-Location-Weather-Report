@@ -19,7 +19,7 @@ const LocationDetector = () => {
         params.set("latitude", position.coords.latitude)
         params.set("longitude", position.coords.longitude)
         setLoading(false)
-        router.push(`/current/${params.toString()}`)
+        router.push(`/current?${params.toString()}`)
       })
     }
   }, [pathname,searchPerams])
